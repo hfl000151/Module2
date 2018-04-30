@@ -1,0 +1,117 @@
+---
+title: "Module2_RMD_doc1"
+author: "Houston"
+date: "April 27, 2018"
+output:
+  html_document: default
+  word_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+#This is a level 1 header
+## R Markdown
+###This is a level three header.
+
+******************************************
+* The following text is provided
+* for easier cutting and pasting as you
+* work through the exercises in
+* Module 2 - lesson 2: R Markdown Syntax
+******************************************
+
+# This is a level 1 header
+
+### This is a level 3 header
+
+Here is a link to [GOOGLE](https://www.google.com/)
+
+Here is a word in **bold** and another word in __bold__.
+
+Here is a word in *italics* and another word in _italics_.
+
+When we compile our document, we are using the `rmarkdown` package.
+
+Here are some example R commands:
+
+```
+2+2
+mean(c(1,2,3,4,5))
+```
+
+
+Here is an example of a non-numbered list:
+
+* Breakfast
+    - food
+        + eggs
+        + toast
+        + bacon
+    - drink
+        + apple juice
+* Lunch
+    - taco
+* Dinner
+    - baked chicken
+    - broccoli
+    - rice
+
+
+Here is an example of a numbered list:
+
+1. Breakfast
+    a. food
+        i. eggs
+        ii. toast
+        iii. bacon
+    b. drink
+        i. apple juice
+2. Lunch
+    a. taco
+3. Dinner
+    a. baked chicken
+    b. broccoli
+    c. rice
+
+
+Here is an example of a blockquote:
+
+> This is a block quote. This
+> paragraph has two lines.
+>
+> 1. This is a list inside a block quote.
+> 2. Second item.
+
+
+Here is an example of a nested blockquote:
+
+> This is a block quote. This
+> paragraph has two lines.
+>
+> > This text is nested
+
+
+Here is an example of code in a blockquote:
+
+>     2+2
+>     mean(c(1,2,3,4,5))
+
+Here is the figure that is in the default R file, but I deleted the code. 
+```{r pressure, echo = F}
+  plot(pressure)
+```
+
+```{r pressure2, fig.height= 5, fig.width= 5}
+plot(pressure)
+```
+
+##Insert Tables 
+
+```{r}
+knitr::kable(head(cars), caption = "Top 6 Rows of Car Dataset")
+```
+
+## Insert an equation
+
+$$ Y = \beta_0 + \beta_1x$$
