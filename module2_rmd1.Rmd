@@ -3,6 +3,7 @@ title: "Module2_RMD_doc1"
 author: "Houston"
 date: "April 27, 2018"
 output:
+  pdf_document: default
   html_document: default
   word_document: default
 ---
